@@ -1,0 +1,10 @@
+<!-- res/drawable/box_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" />
+    <corners android:radius="8dp" />
+    <padding android:left="16dp" android:top="16dp" android:right="16dp" android:bottom="16dp" />
+    <shadowColor android:color="@android:color/darker_gray" />
+    <shadowDx android:offsetX="2dp" />
+    <shadowDy android:offsetY="2dp" />
+    <shadowRadius android:radius="8dp" />
+</shape>

@@ -14,7 +14,7 @@ class SplashScreenActivity : AppCompatActivity() {
         // Add a delay of 3 seconds (3000 milliseconds)
         Handler(Looper.getMainLooper()).postDelayed({
             // Start the main activity
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
             // Finish the splash screen activity so the user cannot return to it
             finish()
