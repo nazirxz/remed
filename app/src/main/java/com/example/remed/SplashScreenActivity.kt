@@ -5,11 +5,16 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import com.example.remed.databinding.SplashScreenBinding
 
 class SplashScreenActivity : AppCompatActivity() {
+
+    private lateinit var binding: SplashScreenBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.splash_screen)
+        binding = SplashScreenBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // Add a delay of 3 seconds (3000 milliseconds)
         Handler(Looper.getMainLooper()).postDelayed({
