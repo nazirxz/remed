@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1066650659451",
+    "project_id": "remed-65e11",
+    "storage_bucket": "remed-65e11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066650659451:android:79ff36fc6a3fe9724fd0de",
+        "android_client_info": {
+          "package_name": "com.example.remed"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwl20IdC65uZ-umG15IUnMhlByX9j8Yj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
