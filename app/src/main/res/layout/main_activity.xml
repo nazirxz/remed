@@ -1,6 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Halaman Utama"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/MenuItemLayout">
+            <ImageView
+                style="@style/MenuIcon"
+                android:src="@drawable/ic_profil" />
+            <TextView
+                style="@style/MenuText"
+                android:text="Profil" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MenuItemLayout">
+            <ImageView
+                style="@style/MenuIcon"
+                android:src="@drawable/ic_konsultasi" />
+            <TextView
+                style="@style/MenuText"
+                android:text="Konsultasi" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MenuItemLayout">
+            <ImageView
+                style="@style/MenuIcon"
+                android:src="@drawable/ic_keranjangobat" />
+            <TextView
+                style="@style/MenuText"
+                android:text="Keranjang" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/MenuItemLayout">
+            <ImageView
+                style="@style/MenuIcon"
+                android:src="@drawable/ic_jadwalminumobat" />
+            <TextView
+                style="@style/MenuText"
+                android:text="Jadwal" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MenuItemLayout">
+            <ImageView
+                style="@style/MenuIcon"
+                android:src="@drawable/ic_katalogobat" />
+            <TextView
+                style="@style/MenuText"
+                android:text="Katalog" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MenuItemLayout">
+            <ImageView
+                style="@style/MenuIcon"
+                android:src="@drawable/ic_persediaanobat" />
+            <TextView
+                style="@style/MenuText"
+                android:text="Persediaan" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/MenuItemLayout">
+            <ImageView
+                style="@style/MenuIcon"
+                android:src="@drawable/ic_notifikasi" />
+            <TextView
+                style="@style/MenuText"
+                android:text="Notifikasi" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MenuItemLayout">
+            <ImageView
+                style="@style/MenuIcon"
+                android:src="@drawable/ic_koinminum" />
+            <TextView
+                style="@style/MenuText"
+                android:text="Koin" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/MenuItemLayout">
+            <ImageView
+                style="@style/MenuIcon"
+                android:src="@drawable/ic_pengaturan" />
+            <TextView
+                style="@style/MenuText"
+                android:text="Pengaturan" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

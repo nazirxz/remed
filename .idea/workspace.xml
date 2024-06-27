@@ -9,8 +9,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e5d3088-690b-4927-ad95-15a0ed3892d6" name="Changes" comment="adding reset password layout">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/remed/ResetActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/remed/ResetActivity.kt" afterDir="false" />
+    <list default="true" id="4e5d3088-690b-4927-ad95-15a0ed3892d6" name="Changes" comment="sudah bisa reset password berdasarkan email">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_jadwalminumobat.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_katalogobat.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_keranjangobat.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_koinminum.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_konsultasi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_notifikasi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_pengaturan.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_persediaanobat.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_profil.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/forgetpass_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/forgetpass_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_activity.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +38,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="valueResourceFile" />
         <option value="resourceFile" />
         <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
+        <option value="valueResourceFile" />
       </list>
     </option>
   </component>
@@ -206,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1719376716650</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="sudah bisa reset password berdasarkan email">
+      <created>1719376960185</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1719376960185</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,6 +258,7 @@
     <MESSAGE value="sudah bsia register dan login tetapi di firebase realtime tidak masuk" />
     <MESSAGE value="sudah bisa connect firebase realtime database" />
     <MESSAGE value="adding reset password layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding reset password layout" />
+    <MESSAGE value="sudah bisa reset password berdasarkan email" />
+    <option name="LAST_COMMIT_MESSAGE" value="sudah bisa reset password berdasarkan email" />
   </component>
 </project>
