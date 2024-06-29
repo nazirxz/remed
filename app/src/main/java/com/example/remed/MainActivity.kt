@@ -24,5 +24,10 @@ class MainActivity:AppCompatActivity() {
             intent.putExtra("userId", userId) // Teruskan UID ke ProfileActivity
             startActivity(intent)
         }
+        binding.menuKonsultasi.setOnClickListener {
+            val intent = Intent(this, KonsulActivity::class.java)
+            intent.putExtra("userId", userId) // Teruskan UID ke ProfileActivity
+            startActivity(intent)
+        }
     }
 }
