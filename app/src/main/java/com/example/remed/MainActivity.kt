@@ -29,5 +29,10 @@ class MainActivity:AppCompatActivity() {
             intent.putExtra("userId", userId) // Teruskan UID ke ProfileActivity
             startActivity(intent)
         }
+        binding.menuKeranjang.setOnClickListener {
+            val intent = Intent(this, KeranjangActivity::class.java)
+            intent.putExtra("userId", userId) // Teruskan UID ke ProfileActivity
+            startActivity(intent)
+        }
     }
 }

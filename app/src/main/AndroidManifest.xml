@@ -27,6 +27,7 @@
         <activity android:name=".ProfilActivity" android:exported="false"/>
         <activity android:name=".ResetActivity" android:exported="false"/>
         <activity android:name=".KonsulActivity" android:exported="false"/>
+        <activity android:name=".KeranjangActivity" android:exported="false"/>
     </application>
 
 </manifest>
