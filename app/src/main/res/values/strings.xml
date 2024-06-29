@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">remed</string>
+    <string-array name="metode_pembayaran">
+        <item>Tunai</item>
+        <item>Non Tunai</item>
+        <item>COD</item>
+        <item>QRIS</item>
+    </string-array>
+
+    <string-array name="layanan_pengiriman">
+        <item>JNE</item>
+        <item>J&amp;T</item>
+        <item>SiCepat</item>
+    </string-array>
 </resources>
