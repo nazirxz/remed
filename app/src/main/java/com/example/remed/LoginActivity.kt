@@ -47,8 +47,10 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
             if (task.isSuccessful) {
                 Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
-                // Navigate to the main activity or perform any other action
-                val intent = Intent(this, MainActivity::class.java) // Replace with your MainActivity
+                val currentUser = auth.currentUser
+
+                val intent = Intent(this, MainActivity::class.java)
+                intent.putExtra("userId", currentUser?.uid) // Tambahkan UID pengguna ke Intent
                 startActivity(intent)
                 finish()
             } else {

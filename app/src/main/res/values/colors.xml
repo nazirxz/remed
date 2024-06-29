@@ -6,4 +6,6 @@
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="teal_200">#03DAC5</color>
+    <color name="blue">#0C8AFF</color>
+    <color name="bluelight">#4D90B8</color>
 </resources>

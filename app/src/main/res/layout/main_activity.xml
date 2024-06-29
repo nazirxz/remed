@@ -30,7 +30,8 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <LinearLayout style="@style/MenuItemLayout">
+        <LinearLayout style="@style/MenuItemLayout"
+            android:id="@+id/menuProfil"  >
             <ImageView
                 style="@style/MenuIcon"
                 android:src="@drawable/ic_profil" />
@@ -39,7 +40,8 @@
                 android:text="Profil" />
         </LinearLayout>
 
-        <LinearLayout style="@style/MenuItemLayout">
+        <LinearLayout style="@style/MenuItemLayout"
+            android:id="@+id/menuKonsultasi"  >
             <ImageView
                 style="@style/MenuIcon"
                 android:src="@drawable/ic_konsultasi" />
@@ -48,7 +50,8 @@
                 android:text="Konsultasi" />
         </LinearLayout>
 
-        <LinearLayout style="@style/MenuItemLayout">
+        <LinearLayout style="@style/MenuItemLayout"
+            android:id="@+id/menuKeranjang"  >
             <ImageView
                 style="@style/MenuIcon"
                 android:src="@drawable/ic_keranjangobat" />
@@ -65,7 +68,8 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <LinearLayout style="@style/MenuItemLayout">
+        <LinearLayout style="@style/MenuItemLayout"
+            android:id="@+id/menuJadwal"  >
             <ImageView
                 style="@style/MenuIcon"
                 android:src="@drawable/ic_jadwalminumobat" />
@@ -74,7 +78,8 @@
                 android:text="Jadwal" />
         </LinearLayout>
 
-        <LinearLayout style="@style/MenuItemLayout">
+        <LinearLayout style="@style/MenuItemLayout"
+            android:id="@+id/menuKatalog"  >
             <ImageView
                 style="@style/MenuIcon"
                 android:src="@drawable/ic_katalogobat" />
@@ -83,7 +88,8 @@
                 android:text="Katalog" />
         </LinearLayout>
 
-        <LinearLayout style="@style/MenuItemLayout">
+        <LinearLayout style="@style/MenuItemLayout"
+            android:id="@+id/menuPersediaan"  >
             <ImageView
                 style="@style/MenuIcon"
                 android:src="@drawable/ic_persediaanobat" />
@@ -100,7 +106,8 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <LinearLayout style="@style/MenuItemLayout">
+        <LinearLayout style="@style/MenuItemLayout"
+            android:id="@+id/menuNotifikasi"  >
             <ImageView
                 style="@style/MenuIcon"
                 android:src="@drawable/ic_notifikasi" />
@@ -109,7 +116,8 @@
                 android:text="Notifikasi" />
         </LinearLayout>
 
-        <LinearLayout style="@style/MenuItemLayout">
+        <LinearLayout style="@style/MenuItemLayout"
+            android:id="@+id/menuKoin"  >
             <ImageView
                 style="@style/MenuIcon"
                 android:src="@drawable/ic_koinminum" />
@@ -118,7 +126,8 @@
                 android:text="Koin" />
         </LinearLayout>
 
-        <LinearLayout style="@style/MenuItemLayout">
+        <LinearLayout style="@style/MenuItemLayout"
+            android:id="@+id/menuPengaturan"  >
             <ImageView
                 style="@style/MenuIcon"
                 android:src="@drawable/ic_pengaturan" />

@@ -15,5 +15,14 @@ class MainActivity:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = MainActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Ambil UID pengguna dari Intent
+        val userId = intent.getStringExtra("userId")
+
+        binding.menuProfil.setOnClickListener {
+            val intent = Intent(this, ProfilActivity::class.java)
+            intent.putExtra("userId", userId) // Teruskan UID ke ProfileActivity
+            startActivity(intent)
+        }
     }
 }
