@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -29,6 +31,9 @@
         <activity android:name=".KonsulActivity" android:exported="false"/>
         <activity android:name=".KeranjangActivity" android:exported="false"/>
         <activity android:name=".KeranjangDetailActivity" android:exported="false"/>
+        <activity android:name=".JadwalActivity" android:exported="false"/>
+        <receiver android:name=".services.ReminderReceiver" />
+
     </application>
 
 </manifest>
