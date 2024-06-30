@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".RegisterActivity"
+    android:background="@color/white">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -95,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:text="Daftar"
                 android:layout_marginTop="16dp"
-                android:backgroundTint="@color/teal_200" />
+                android:backgroundTint="@color/bluelight" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,13 +21,12 @@
             app:civ_border_width="2dp"
             app:civ_border_color="@color/bluelight"/>
 
-
         <Button
             android:id="@+id/btnTambahFoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/bluelight"
             android:text="Tambahkan Foto"
             android:layout_marginBottom="16dp"/>
 
@@ -84,7 +83,7 @@
             android:id="@+id/btnSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/blue"
+            android:backgroundTint="@color/bluelight"
             android:text="Edit" />
 
     </LinearLayout>
