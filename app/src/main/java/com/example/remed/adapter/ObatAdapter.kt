@@ -2,6 +2,7 @@ package com.example.remed.adapter
 
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -13,6 +14,7 @@ import com.squareup.picasso.Picasso
 
 class ObatAdapter(private val obatList: List<Obat>) : RecyclerView.Adapter<ObatAdapter.ObatViewHolder>() {
     private var obatListFiltered: List<Obat> = obatList.toList()
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ObatViewHolder {
         val binding = ItemObatBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ObatViewHolder(binding)
@@ -32,6 +34,27 @@ class ObatAdapter(private val obatList: List<Obat>) : RecyclerView.Adapter<ObatA
     }
 
     inner class ObatViewHolder(private val binding: ItemObatBinding) : RecyclerView.ViewHolder(binding.root) {
+
+        private var isQuantityShown = false
+        private var quantity = 0
+
+        init {
+            binding.ivAdd.setOnClickListener {
+                isQuantityShown = true
+                quantity++
+                updateQuantityVisibilityAndText()
+            }
+
+            binding.ivRemove.setOnClickListener {
+                if (quantity > 0) {
+                    quantity--
+                    if (quantity == 0) {
+                        isQuantityShown = false
+                    }
+                    updateQuantityVisibilityAndText()
+                }
+            }
+        }
 
         fun bind(obat: Obat) {
             binding.apply {
@@ -59,6 +82,14 @@ class ObatAdapter(private val obatList: List<Obat>) : RecyclerView.Adapter<ObatA
                     ivObat.setImageResource(R.drawable.ic_persediaanobat)
                 }
             }
+            // Initial visibility setup:
+            isQuantityShown = quantity > 0  // Show if quantity is already greater than 0
+            updateQuantityVisibilityAndText()
+        }
+        private fun updateQuantityVisibilityAndText() {
+            binding.tvQuantity.visibility = if (isQuantityShown) View.VISIBLE else View.GONE
+            binding.ivRemove.visibility = if (isQuantityShown) View.VISIBLE else View.GONE
+            binding.tvQuantity.text = quantity.toString()
         }
     }
 
